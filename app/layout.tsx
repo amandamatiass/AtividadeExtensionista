@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script"; // <-- Adicionado aqui
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,14 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        {/* <-- Adicionado aqui */}
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="0d4490f2-e706-4309-acc0-8b4cc5f366e8"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
