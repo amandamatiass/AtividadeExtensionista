@@ -32,7 +32,7 @@ export default function HeroSection() {
           {/* Título e subtítulo */}
           <div className="pt-2">
             <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-3">
-              IA: Sua Ferramenta Otimizadora de Processos
+              IA: Sua Ferramenta para Otimização de Processos
             </h1>
             <p className="text-white/70 italic text-base md:text-lg">
               Simplifique processos e foque no que gera valor!
